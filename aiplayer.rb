@@ -1,11 +1,12 @@
 require 'set'
+
 class AiPlayer
 	attr_reader :name, :ghost
 
 	def initialize(name)
 		@name = name
 		@ghost = ""
-		@number_of_other_players = 3
+		@number_of_other_players = nil
 		@winning_moves = []
 		@losing_moves = []
 	end
