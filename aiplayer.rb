@@ -31,6 +31,7 @@ class AiPlayer
 	end
 
 	def set_winning_moves(fragment, dictionary)
+		@winning_moves = []
 		alphabets = ("a".."z").to_a
 		alphabets.each do |alphabet|
 			possible_word = fragment + alphabet
@@ -48,6 +49,7 @@ class AiPlayer
 	end
 
 	def set_losing_moves(fragment, dictionary)
+		@losing_moves = []
 		alphabets = ("a".."z").to_a
 		alphabets.each do |alphabet|
 			possible_word = fragment + alphabet
